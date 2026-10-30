@@ -29,7 +29,7 @@ I chose this dataset because its traffic is realistic and large, which makes it 
 - Ran a Phi-K correlation matrix and dropped features with correlation below 0.1 to the label
 - This narrowed ~90 features down to **34**, covering packet rates, sizes, timing patterns, protocol/service types, and TCP flag activity
 
-<img src="images/phik_correlation.png" width="450" alt="Phi-K correlation matrix">
+<img src="images/phik.png" width="450" alt="Phi-K correlation matrix">
 
 **3. Models**
 | Type | Models |
@@ -55,13 +55,10 @@ Compared accuracy, recall, precision, and F1 on training and test sets, plus an 
 | Tuned Decision Tree | 0.986 | 0.993 | 0.886 | 0.936 |
 | Logistic Regression | 0.984 | 0.953 | 0.893 | 0.922 |
 
-Full train vs. test scores: [images/results_table.png](images/results_table.png)
-
 **Why Tuned XGBoost?** It had a very small gap between training and test scores while keeping all metrics high. The untuned XGBoost scored slightly higher, but its 0.999 training accuracy suggested possible overfitting.
 
 <p>
-<img src="images/roc_curve.png" width="420" alt="ROC curve, AUC 0.9956">
-<img src="images/feature_importance_xgboost.png" width="420" alt="XGBoost feature importance">
+<img src="images/roccurve.png" width="420" alt="ROC curve, AUC 0.9956">
 </p>
 
 - Logistic regression reached an **ROC AUC of 0.9956**, nearly perfect even for a simple linear model.
