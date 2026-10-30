@@ -4,7 +4,7 @@ Using supervised machine learning to detect whether an IoT network transmission 
 
 *Research poster presented at the Stanford Pre-Collegiate Summer Institutes symposium (Introduction to Machine Learning, June 2026).*
 
-![Research poster](images/poster.jpg)
+![Research poster](images/paper.jpeg)
 
 ## The Problem
 As more everyday actions run over networks, from uploading a file to controlling a smart light bulb, network security matters more. IoT devices are especially easy targets. This project asks: **can a machine learning model tell normal IoT traffic apart from an attack, using only traffic features like packet rates, sizes, and timing?**
